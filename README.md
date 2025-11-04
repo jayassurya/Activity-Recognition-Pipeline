@@ -41,7 +41,7 @@ You can feed it a new video, and it'll spit out a time-stamped log of what's hap
 
 ## How to Run It
 
-### 1. Train the Model (The long part)
+### 1. Train the Model 
 
 * Run `train.py`. This will load all your videos, train the model, and save the best version as `activity_model_best.pth`.
     ```bash
@@ -49,7 +49,7 @@ You can feed it a new video, and it'll spit out a time-stamped log of what's hap
     ```
 * **Heads up:** I have a 6GB 3060, so I had to set my `BATCH_SIZE` in `train.py` to `4`. If you get an "Out of Memory" error, set yours to `4` or `2`.
 
-### 2. Run the Demo! (The fun part)
+### 2. Run the Demo
 
 * Once you have your `.pth` file, open `demo.py`.
 * Change the `INPUT_VIDEO_PATH` variable to whatever video you want to test.
